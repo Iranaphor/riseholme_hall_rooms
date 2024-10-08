@@ -111,6 +111,21 @@ if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the Fiducial Markers YAML File
+#================================================================
+#% DESCRIPTION
+#%    Path to yaml file containing fiducial marker posisions or
+#%    to the autogen version if the supplied is not given or
+#%    empty if the autogen version does not exist.
+#%
+#================================================================
+export FIDUCIAL_MARKERS_FILE="$CONFIG_DIR/world/fiducial_markers.yaml"
+if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="$CONFIG_DIR/world/fiducial_markers.yaml.yaml" ; fi
+if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the Costmap YAML Configuration File
 #================================================================
 #% DESCRIPTION

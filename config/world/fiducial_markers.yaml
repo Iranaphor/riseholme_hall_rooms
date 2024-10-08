@@ -1,0 +1,55 @@
+###
+# Used for localising the tf frame of the camera
+stag_markers:
+  - id: 2
+    hamming: 'HD19' #not used yet 
+    radius: 0.115 #m #not used yet
+    normal: 'up'
+    yaw: 'down' #not used yet 
+    pose:
+      #position of marker centre
+      position:
+        x: -1.6633703708648682
+        y: -0.03283071517944336
+        z: 0.0
+      #rotation about centre
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.8355618598056386
+        w: 0.5493963764333929
+
+  - id: 3
+    hamming: 'HD19' #not used yet 
+    radius: 0.115 #m #not used yet 
+    normal: 'up'
+    yaw: 'down' #not used yet 
+    pose:
+      #position of marker centre
+      position:
+        x: -0.9209842681884766
+        y: 1.5723633766174316
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.5897166020249169
+        w: 0.8076102582905852
+
+  - id: 5
+    hamming: 'HD19' #not used yet 
+    radius: 0.115 #m #not used yet 
+    normal: 'up'
+    yaw: 'down' #not used yet
+    pose:
+      #position of marker centre
+      position:
+        x: -0.38596752285957336
+        y: -0.5592780113220215
+        z: 0.0
+      #rotation about centre
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.8311519367573663
+        w: 0.5560453740698496
