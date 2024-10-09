@@ -74,7 +74,7 @@ if [ -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
 #%    autogen version does not exist.
 #%
 #================================================================
-export DATUM_FILE="$CONFIG_DIR/location/datum.yaml"
+if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="$CONFIG_DIR/location/datum.yaml" ; fi
 if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="$CONFIG_DIR/location/datum_autogen.yaml" ; fi
 if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="" ; fi
 
@@ -89,7 +89,7 @@ if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="" ; fi
 #%    empty if the autogen version does not exist.
 #%
 #================================================================
-export TMAP_FILE="$CONFIG_DIR/topological/network.tmap2.yaml"
+if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="$CONFIG_DIR/topological/network.tmap2.yaml" ; fi
 if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="$CONFIG_DIR/topological/network_autogen.tmap2.yaml" ; fi
 if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 
@@ -104,7 +104,7 @@ if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 #%    empty if the autogen version does not exist.
 #%
 #================================================================
-export GAZEBO_WORLD_FILE="$CONFIG_DIR/world/gazebo.world.xml"
+if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="$CONFIG_DIR/world/gazebo.world.xml" ; fi
 if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="$CONFIG_DIR/world/gazebo_autogen.world.xml" ; fi
 if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="" ; fi
 
@@ -119,7 +119,7 @@ if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="" ; fi
 #%    empty if the autogen version does not exist.
 #%
 #================================================================
-export FIDUCIAL_MARKERS_FILE="$CONFIG_DIR/world/fiducial_markers.yaml"
+if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="$CONFIG_DIR/world/fiducial_markers.yaml" ; fi
 if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="$CONFIG_DIR/world/fiducial_markers.yaml.yaml" ; fi
 if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="" ; fi
 
@@ -135,8 +135,6 @@ if [ ! -f "$FIDUCIAL_MARKERS_FILE" ]; then export FIDUCIAL_MARKERS_FILE="" ; fi
 #%    does not exist.
 #%
 #================================================================
-export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map.yaml"
+if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map.yaml" ; fi
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map_autogen.yaml" ; fi
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="" ; fi
-
-
