@@ -36,6 +36,24 @@ stag_markers:
         z: 0.5897166020249169
         w: 0.8076102582905852
 
+  - id: 4
+    hamming: 'HD19' #not used yet 
+    radius: 0.115 #m #not used yet 
+    normal: 'up'
+    yaw: 'down' #not used yet
+    pose:
+      #position of marker centre
+      position:
+        x: -0.9012854099273682
+        y: 0.5920668244361877
+        z: 0.0
+      #rotation about centre
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: -0.8355618598056386
+        w: 0.5493963764333929
+
   - id: 5
     hamming: 'HD19' #not used yet 
     radius: 0.115 #m #not used yet 
